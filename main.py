@@ -1,5 +1,5 @@
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = "books/the_raven.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
@@ -16,7 +16,7 @@ def print_report(num_words, chars_dict):
         char_list.append({"char": char, "num": num})
     char_list.sort(reverse=True, key=sort_on)
 
-    print("--- Begin report of books/frankenstein.txt ---")
+    print("--- Begin report of books/the_raven.txt ---")
     print(f"{num_words} words found in the document\n")
 
     for chars_dict in char_list:
